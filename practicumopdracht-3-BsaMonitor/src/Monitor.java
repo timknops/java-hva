@@ -5,11 +5,13 @@ import java.util.Scanner;
  *
  * @author Tim Knops
  */
+
 public class Monitor {
 
     /**
      * @param args command line arguments
      */
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         // Declaring constant variables
