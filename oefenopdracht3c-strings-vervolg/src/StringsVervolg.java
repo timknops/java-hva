@@ -1,13 +1,20 @@
-import java.util.Objects;
 import java.util.Scanner;
 
+/**
+ * Program asks for user input and gives info based on what the user gave.
+ *
+ * @author Tim Knops
+ */
 
 public class StringsVervolg {
+
+    /**
+     * @param args command line arguments
+     */
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // Ask for user input of a sentence of 3 words and stores it
         System.out.print("Geef een zin van 3 woorden: ");
         String firstSentence = input.nextLine();
 
@@ -29,7 +36,7 @@ public class StringsVervolg {
         }
         for (int i = 0; i < secondSentenceWords.length; i++) {
             System.out.printf("De eerste letter van woord %d: %c\n", i, secondSentenceWords[i].charAt(0));
-        } // Prints out the input string in uppercase
+        }
         System.out.printf("De zin in hoofdletters: %s\n\n", secondSentence.toUpperCase());
 
         System.out.print("Geef een derde zin van drie woorden: ");
