@@ -14,8 +14,8 @@ public class BsaMonitor {
      */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        double MIN_GRADE = 5.5;
-        String[] SUBJECT_NAMES = {"Engels", "Personal & Project Skills", "Programming", "Project FYS",
+        final double MIN_GRADE = 5.5;
+        final String[] SUBJECT_NAMES = {"Engels", "Personal & Project Skills", "Programming", "Project FYS",
                                   "User Interaction", "Wiskunde", "Databases", "Object Oriented Programming 1",
                                   "Business", "Nederlands", "Object Oriented Programming 2",
                                   "Project Agile Development", "Research & Communication Skills", "Databases 2",
