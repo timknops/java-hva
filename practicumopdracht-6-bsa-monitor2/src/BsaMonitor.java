@@ -12,6 +12,7 @@ public class BsaMonitor {
     /**
      * @param args Command line arguments.
      */
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         final double MIN_GRADE = 5.5;
