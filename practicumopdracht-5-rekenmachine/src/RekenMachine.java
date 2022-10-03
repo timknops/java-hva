@@ -51,9 +51,9 @@ public class RekenMachine {
      */
 
     static boolean isValidOperator(char character) {
-        char[] OPERATORS = {'+', '-', '*', '/', '%'};
+        final char[] OPERATORS = {'+', '-', '*', '/', '%'};
 
-        // For each loop that check if the method parameter is equal to one of the operators in the array.
+        // For each loop that checks if the method parameter is equal to one of the operators in the array.
         for (char operator : OPERATORS) {
             if (operator == character) {
                 return true;
