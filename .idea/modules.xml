@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/java-hva.iml" filepath="$PROJECT_DIR$/.idea/java-hva.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oefenopdracht2a-leeftijdberekening/oefenopdracht2a-leeftijdberekening.iml" filepath="$PROJECT_DIR$/oefenopdracht2a-leeftijdberekening/oefenopdracht2a-leeftijdberekening.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oefenopdracht2b-BMI/oefenopdracht2b-BMI.iml" filepath="$PROJECT_DIR$/oefenopdracht2b-BMI/oefenopdracht2b-BMI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oefenopdracht3a-BMI-vervolg/oefenopdracht3a-BMI-vervolg.iml" filepath="$PROJECT_DIR$/oefenopdracht3a-BMI-vervolg/oefenopdracht3a-BMI-vervolg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oefenopdracht3b-money-exchange/oefenopdracht3b-money-exchange.iml" filepath="$PROJECT_DIR$/oefenopdracht3b-money-exchange/oefenopdracht3b-money-exchange.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oefenopdracht3c-strings-vervolg/oefenopdracht3c-strings-vervolg.iml" filepath="$PROJECT_DIR$/oefenopdracht3c-strings-vervolg/oefenopdracht3c-strings-vervolg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oefenopdracht4a-tafels/oefenopdracht4a-tafels.iml" filepath="$PROJECT_DIR$/oefenopdracht4a-tafels/oefenopdracht4a-tafels.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oefenopdracht4b-money-exchange-vervolg/oefenopdracht4b-money-exchange-vervolg.iml" filepath="$PROJECT_DIR$/oefenopdracht4b-money-exchange-vervolg/oefenopdracht4b-money-exchange-vervolg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oefenopdracht5a-gezondheidstest-v3/oefenopdracht5a-gezondheidstest-v3.iml" filepath="$PROJECT_DIR$/oefenopdracht5a-gezondheidstest-v3/oefenopdracht5a-gezondheidstest-v3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oefenopdracht6a-tentamencijfers/oefenopdracht6a-tentamencijfers.iml" filepath="$PROJECT_DIR$/oefenopdracht6a-tentamencijfers/oefenopdracht6a-tentamencijfers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oefenopdracht6b-zoekgetal-v2/oefenopdracht6b-zoekgetal-v2.iml" filepath="$PROJECT_DIR$/oefenopdracht6b-zoekgetal-v2/oefenopdracht6b-zoekgetal-v2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oefenopdracht6c-getallen-raden/oefenopdracht6c-getallen-raden.iml" filepath="$PROJECT_DIR$/oefenopdracht6c-getallen-raden/oefenopdracht6c-getallen-raden.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oefentoets-week4-plof/oefentoets-week4-plof.iml" filepath="$PROJECT_DIR$/oefentoets-week4-plof/oefentoets-week4-plof.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oefentoets-week7-computeronderdelen/oefentoets-week7-computeronderdelen.iml" filepath="$PROJECT_DIR$/oefentoets-week7-computeronderdelen/oefentoets-week7-computeronderdelen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practicumopdracht-1-songtext/practicumopdracht-1-songtext.iml" filepath="$PROJECT_DIR$/practicumopdracht-1-songtext/practicumopdracht-1-songtext.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practicumopdracht-2-verkoopprijs/practicumopdracht-2-verkoopprijs.iml" filepath="$PROJECT_DIR$/practicumopdracht-2-verkoopprijs/practicumopdracht-2-verkoopprijs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practicumopdracht-3-bsa-monitor/practicumopdracht-3-bsa-monitor.iml" filepath="$PROJECT_DIR$/practicumopdracht-3-bsa-monitor/practicumopdracht-3-bsa-monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practicumopdracht-4-dobbelsteen/practicumopdracht-4-dobbelsteen.iml" filepath="$PROJECT_DIR$/practicumopdracht-4-dobbelsteen/practicumopdracht-4-dobbelsteen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practicumopdracht-5-rekenmachine/practicumopdracht-5-rekenmachine.iml" filepath="$PROJECT_DIR$/practicumopdracht-5-rekenmachine/practicumopdracht-5-rekenmachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practicumopdracht-6-bsa-monitor2/practicumopdracht-6-bsa-monitor2.iml" filepath="$PROJECT_DIR$/practicumopdracht-6-bsa-monitor2/practicumopdracht-6-bsa-monitor2.iml" />
+    </modules>
+  </component>
+</project>
