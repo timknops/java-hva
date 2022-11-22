@@ -51,7 +51,7 @@ public class Vak {
         double MIN_CIJFER = 5.5;
 
         if (cijfer < MIN_CIJFER) {
-            punten = 0;
+            return 0;
         }
 
         return punten;
