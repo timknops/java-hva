@@ -22,17 +22,17 @@ public class Vak {
         this.punten = punten;
     }
 
-    /** @return naam gegeven in de constructor */
+    /** Returns de naam gegeven in de constructor */
     public String getNaam() {
         return NAAM;
     }
 
-    /** @return punten gegeven in constructor */
+    /** Returns de punten gegeven in constructor */
     public int getPunten() {
         return punten;
     }
 
-    /** @return cijfer gegeven in de constructor */
+    /** Returns het cijfer gegeven in de constructor */
     public double getCijfer() {
         return cijfer;
     }
@@ -46,7 +46,7 @@ public class Vak {
         this.cijfer = cijfer;
     }
 
-    /** @return het aantal punten behaald door de gebruiker afhankelijk van hoe hoog het cijfer is. */
+    /** Returns het aantal punten behaald door de gebruiker afhankelijk van hoe hoog het cijfer is. */
     public int gehaaldePunten() {
         double MIN_CIJFER = 5.5;
 
