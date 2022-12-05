@@ -1,3 +1,8 @@
+/**
+ * 
+ *
+ * @author Tim Knops
+ */
 public class Adres {
 
     private String straat;

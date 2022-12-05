@@ -1,30 +1,31 @@
 import java.time.LocalDate;
 import java.util.Scanner;
 
+/**
+ * Dit programma laat de gebruiker studenten toevoegen aan een door hem gekozen klas, waarvan alle studenten vervolgens
+ * worden weegegeven.
+ *
+ * @author Tim Knops
+ */
 public class Main {
 
     public static void main(String[] args) {
+        final int MAX_AANTAL_STUDENTEN = 30;
         Scanner scanner = new Scanner(System.in);
-
-//        Adres adres = new Adres("hans", 10, "1625GH", "Hoorn");
-//        Student student = new Student(500849389,
-//                "Hans", "Klok", LocalDate.of(2001, 1, 13), adres);
-//
-//        Student student2 = new Student(55532534, "Peter", "Jan",
-//                LocalDate.of(2002, 2, 22), adres);
 
         System.out.print("Naam van de klas: ");
         Klas klas = new Klas(scanner.nextLine());
 
         int studentenCounter = 1, studentNummer;
         do {
-            System.out.printf("Student %d\n", studentenCounter);
+            System.out.printf("\nStudent %d\n", studentenCounter);
 
             System.out.print("Studentnummer: ");
             studentNummer = scanner.nextInt();
-            if (studentNummer == 0) {
+            if (studentNummer == 0) { // Als de input 0 is bij de input van het studentnummer, eindigd het programma.
                 break;
             }
+
             System.out.print("Voornaam: ");
             String voornaam = scanner.next();
             System.out.print("Achternaam: ");
@@ -38,42 +39,36 @@ public class Main {
             int huisnummer = scanner.nextInt();
 
             String postcode;
-            while (true) {
+            // Validatie van de postcode.
+            do {
+                System.out.print("Postcode: ");
                 postcode = scanner.next();
                 if (!Adres.isGeldigePostcode(postcode)) {
-                    System.out.println("Ongeldige postcode! Probeer opniew\n");
-                    continue;
+                    System.out.println("\nOngeldige postcode! Probeer opniew\n");
                 }
-                break;
-            }
-
-            do {
-                postcode = scanner.next();
-
-
             } while (!Adres.isGeldigePostcode(postcode));
 
-
-
+            System.out.print("Plaats: ");
             String plaats = scanner.next();
 
             String[] geboortedatumArr = geboortedatum.split("-");
 
+            // Adres en student worden aangemaakt en toegevoegd aan de klas.
             Adres adres = new Adres(straat, huisnummer, postcode, plaats);
             Student student = new Student(studentNummer, voornaam, achternaam,
                     LocalDate.of(Integer.parseInt(geboortedatumArr[2]),
                                  Integer.parseInt(geboortedatumArr[1]),
-                                 Integer.parseInt(geboortedatumArr[0])),
-                    adres);
+                                 Integer.parseInt(geboortedatumArr[0])), adres);
             klas.voegStudentToe(student);
 
             studentenCounter++;
-        } while (klas.getAantalStudenten() < 30);
+        } while (klas.getAantalStudenten() < MAX_AANTAL_STUDENTEN);
 
-        if (klas.getAantalStudenten() == 30) {
-            System.out.println("Maximale aantal studenten voor deze klas bereikt!\n");
+        if (klas.getAantalStudenten() == MAX_AANTAL_STUDENTEN) {
+            System.out.println("\nMaximale aantal studenten voor deze klas bereikt!\n");
         }
 
+        System.out.println();
 
         String alleStudenten = klas.toString();
         System.out.println(alleStudenten);
