@@ -50,8 +50,7 @@ public class Klas {
     public String toString() {
         StringBuilder str = new StringBuilder();
 
-        str.append(String.format("Klas: %s (%d studenten)\n",
-                naam, aantalStudenten));
+        str.append(String.format("Klas: %s (%d studenten)\n", naam, aantalStudenten));
         for (int i = 0; i < aantalStudenten; i++) {
             str.append(studenten[i].toString());
         }

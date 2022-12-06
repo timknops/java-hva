@@ -30,7 +30,7 @@ public class Main {
             String voornaam = scanner.next();
             System.out.print("Achternaam: ");
             String achternaam = scanner.next();
-            System.out.print("Geboortedatum (DD-MM-YYY): ");
+            System.out.print("Geboortedatum (DD-MM-YYYY): ");
             String geboortedatum = scanner.next();
 
             System.out.print("Straat: ");
@@ -70,6 +70,7 @@ public class Main {
 
         System.out.println();
 
+        // Print de klas en alle studenten met de desbetreffende informatie.
         String alleStudenten = klas.toString();
         System.out.println(alleStudenten);
     }
