@@ -29,7 +29,7 @@ public class Vak {
 
     /** @return punten gegeven in constructor */
     public int getPunten() {
-        return punten;
+        return this.punten;
     }
 
     /** @return cijfer gegeven in de constructor */
@@ -48,10 +48,10 @@ public class Vak {
 
     /** @return het aantal punten behaald door de gebruiker afhankelijk van hoe hoog het cijfer is. */
     public int gehaaldePunten() {
-        double MIN_CIJFER = 5.5;
+        final double MIN_CIJFER = 5.5;
 
         if (cijfer < MIN_CIJFER) {
-            punten = 0;
+            return 0;
         }
 
         return punten;
