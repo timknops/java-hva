@@ -64,7 +64,8 @@ public class Main {
     }
 
     /**
-     * Berekent het bsa advies voor alle opgegeven vakken en print uit of dit een negatief advies is of niet.
+     * Berekent het minimale en maximale aantal behaalbare punten voor alle vakken. Wanneer het aantal behaalde
+     * studiepunten lager is dan 5/6 van de maximaal te behalen studiepunten, wordt er een warning geprint.
      *
      * @param Vak   array met vak objecten
      */
