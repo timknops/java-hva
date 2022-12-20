@@ -2,7 +2,7 @@ package nl.hva.bedrijf;
 
 public class Persoon {
 
-    protected String naam;
+    private String naam;
 
     public Persoon(String naam) {
         this.naam = naam;
