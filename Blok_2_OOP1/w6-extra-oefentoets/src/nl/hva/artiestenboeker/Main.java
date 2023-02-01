@@ -2,6 +2,7 @@ package nl.hva.artiestenboeker;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Locale;
 
 /**
@@ -28,10 +29,10 @@ public class Main {
         testStap3();
 
         //test stap 4
-//        testStap4();
+        testStap4();
 
         // test stap 5
-//        testStap5();
+        testStap5();
     }
 
     // test stap 1
@@ -107,7 +108,10 @@ public class Main {
     }
 
     public static void printArtiestenPerGenre() {
-
+        Collections.sort(artiesten);
+        for (Artiest artiest : artiesten) {
+            System.out.println(artiest);
+        }
     }
 
 //
@@ -117,24 +121,33 @@ public class Main {
         printArtiestenPerGenre();
     }
 
+    public static void boekArtiest(String artiestnaam, LocalDate datum) {
+        for (Artiest artiest : artiesten) {
+            if (artiest.krijgNaam().equals(artiestnaam)) {
+                System.out.println(artiest.boek(datum) ? artiestnaam + " is geboekt op " + datum :
+                                                         artiestnaam + " kon niet worden geboekt op " + datum);
+            }
+        }
+    }
+
 //
-//    private static void testStap5() {
-//        System.out.println("\n--- TEST STAP 5 ---");
-//        System.out.println("Boekingen:");
-//
-//        boekArtiest("The Dutch Joker", LocalDate.of(2019, 6, 12));
-//        boekArtiest("Mo Botan", LocalDate.of(2019, 7, 2));
-//        boekArtiest("Black swans", LocalDate.of(2019, 7, 2));
-//        boekArtiest("The Dutch Joker", LocalDate.of(2019, 6, 12));
-//        boekArtiest("Black swans", LocalDate.of(2019, 6, 19));
-//        boekArtiest("Mo Botan", LocalDate.of(2019, 7, 2));
-//        boekArtiest("Black swans", LocalDate.of(2019, 7, 3));
-//        System.out.println("\nDe volgende artiesten zijn minimaal één keer geboekt:");
-//        for (Artiest artiest : artiesten) {
-//            if (artiest.krijgAantalBoekingen() > 0) {
-//                System.out.println(artiest);
-//            }
-//        }
-//    }
+    private static void testStap5() {
+        System.out.println("\n--- TEST STAP 5 ---");
+        System.out.println("Boekingen:");
+
+        boekArtiest("The Dutch Joker", LocalDate.of(2019, 6, 12));
+        boekArtiest("Mo Botan", LocalDate.of(2019, 7, 2));
+        boekArtiest("Black swans", LocalDate.of(2019, 7, 2));
+        boekArtiest("The Dutch Joker", LocalDate.of(2019, 6, 12));
+        boekArtiest("Black swans", LocalDate.of(2019, 6, 19));
+        boekArtiest("Mo Botan", LocalDate.of(2019, 7, 2));
+        boekArtiest("Black swans", LocalDate.of(2019, 7, 3));
+        System.out.println("\nDe volgende artiesten zijn minimaal één keer geboekt:");
+        for (Artiest artiest : artiesten) {
+            if (artiest.krijgAantalBoekingen() > 0) {
+                System.out.println(artiest);
+            }
+        }
+    }
 
 }
