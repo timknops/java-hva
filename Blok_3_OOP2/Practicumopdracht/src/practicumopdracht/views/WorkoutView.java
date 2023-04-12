@@ -8,6 +8,13 @@ import javafx.scene.layout.*;
 import javafx.scene.text.Text;
 import practicumopdracht.models.Workout;
 
+/**
+ * Sub-Class of View, contains all things view related to Workout.
+ *
+ * @author Tim Knops
+ * @see View
+ * @see Workout
+ */
 public class WorkoutView extends View {
 
     private Button saveButton;
@@ -31,6 +38,7 @@ public class WorkoutView extends View {
 
     }
 
+    /** {@inheritDoc} */
     @Override
     protected Parent initializeView() {
         // Making the layout.

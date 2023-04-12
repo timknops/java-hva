@@ -2,6 +2,9 @@ package practicumopdracht.models;
 
 import java.io.Serializable;
 
+/**
+ *
+ */
 public class Exercise implements Serializable {
 
     private transient Workout belongsTo;

@@ -39,6 +39,12 @@ public class MainApplication extends Application {
         switchController(new WorkoutController());
     }
 
+    /**
+     * Switches between the different controllers.
+     *
+     * @param controller  controller that needs to be switched to
+     * @see               Controller
+     */
     public static void switchController(Controller controller) {
         File styles = new File("src/practicumopdracht/assets/style.css");
 
@@ -47,10 +53,12 @@ public class MainApplication extends Application {
         stage.show();
     }
 
+    /** Returns the WorkoutDAO that is currently used. */
     public static WorkoutDAO getWorkoutDAO() {
         return workoutDAO;
     }
 
+    /** Returns the ExerciseDAO that is currently used. */
     public static ExerciseDAO getExerciseDAO() {
         return exerciseDAO;
     }

@@ -8,6 +8,13 @@ import javafx.scene.layout.*;
 import practicumopdracht.models.Exercise;
 import practicumopdracht.models.Workout;
 
+/**
+ * Sub-Class of View, contains all view things related to Exercise.
+ *
+ * @author Tim Knops
+ * @see    Exercise
+ * @see    View
+ */
 public class ExerciseView extends View {
 
     private Button saveButton;
@@ -39,6 +46,7 @@ public class ExerciseView extends View {
     public ExerciseView() {
     }
 
+    /** {@inheritDoc} */
     @Override
     protected Parent initializeView() {
         // Making the layout.
@@ -88,6 +96,7 @@ public class ExerciseView extends View {
 
         buttonHbox.getChildren().addAll(saveButton, deleteButton, newButton, switchButton);
 
+        // Adding the radiobuttons.
         HBox radioButtonHbox = new HBox();
         radioButtonHbox.setPrefWidth(580);
         radioButtonHbox.setAlignment(Pos.BOTTOM_CENTER);
