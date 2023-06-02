@@ -1,5 +1,5 @@
 # java-hva
-This repository contains all the java assignments that were done for school.
+This repository contains all the java assignments that were done during my first year of software engineering in school.
 
 *Each subject lasted for a total of 2 months.*
 
